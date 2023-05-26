@@ -1,7 +1,7 @@
 # Learn_CPP
 This repo contains all the source codes during my learning journey of CPP.
 
-***Notice that executables are compiled using g++ 9.4.0 on Ubuntu 18.04**
+***Notice that executables are compiled using g++ 9.4.0 on Ubuntu 18.04***
 
 References website:
 1. https://www.learncpp.com/
