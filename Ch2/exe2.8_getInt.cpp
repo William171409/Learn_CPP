@@ -1,5 +1,4 @@
 #include <iostream>
-// #include "getInt.hpp"
 
 int getInteger()
 {

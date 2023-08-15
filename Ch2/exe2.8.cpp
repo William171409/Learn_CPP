@@ -1,7 +1,7 @@
 #include <iostream>
+#include "getInt.hpp"
 
-int getInteger();
-
+// int getInteger();
 int main()
 {
 	int x{ getInteger() };
