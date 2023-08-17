@@ -34,7 +34,7 @@
 // Q4
 int main()
 {
-    int matrix_size{6};
+    int matrix_size{5};
     int outer{1};
     while (outer <= matrix_size)
     {
