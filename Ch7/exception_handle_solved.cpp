@@ -56,8 +56,9 @@ char getOperator()
 void printResult(double x, char operation, double y)
 {
     if((y==0)&&operation=='/')
-    {   std::cout<<"The divider is not allowed to be 0!"<<std::endl;
-        std::exit(1);
+    {   std::cout<<"The divider is not allowed to be 0! Enter a new divider!"<<std::endl;
+        y=getDouble();
+        // std::exit(1);
     }
     switch (operation)
     {
