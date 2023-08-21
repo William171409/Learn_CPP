@@ -7,6 +7,13 @@ struct Employee
     double wage {};
 };
 
+struct Employer
+{
+    int scale;
+    double salary;
+};
+
+
 int main()
 {
     Employee joe;
@@ -33,6 +40,13 @@ int main()
 
     // Today is Joe's birthday
     ++joe.age; // use pre-increment to increment Joe's age by 1
+
+    Employee Max{22,25,50000};
+    std::cout<<Max.id<<' '<<Max.age<<' '<<Max.wage<<'\n';
+
+    Employer pg{25003920,5500};
+    std::cout<<pg.scale<<' '<<pg.salary<<'\n';
+    
 
     return 0;
 }

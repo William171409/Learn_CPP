@@ -33,19 +33,20 @@ it will cause the dangling references which means, the reference object returned
 the function is a reference object while the referent is already destroyed!*/
 std::string_view getAnimalname(Animal animal)
 {
+    using enum Animal;
     switch (animal)
     {
-    case Animal::cat:
+    case cat:
         return "cat";
-    case Animal::chicken:
+    case chicken:
         return "chicken";
-    case Animal::dog:
+    case dog:
         return "dog";
-    case Animal::duck:
+    case duck:
         return "duck";
-    case Animal::goat:
+    case goat:
         return "goat";
-    case Animal::pig:
+    case pig:
         return "pig";
     default:
         return "unkown";
@@ -53,19 +54,20 @@ std::string_view getAnimalname(Animal animal)
 }
 int printNumberOfLegs(Animal animal)
 {
+    using enum Animal;
     switch (animal)
     {
-    case Animal::cat:
+    case cat:
         return 4;
-    case Animal::chicken:
+    case chicken:
         return 2;
-    case Animal::dog:
+    case dog:
         return 4;
-    case Animal::duck:
+    case duck:
         return 4;
-    case Animal::goat:
+    case goat:
         return 4;
-    case Animal::pig:
+    case pig:
         return 4;
     default:
         return -1;
@@ -73,9 +75,9 @@ int printNumberOfLegs(Animal animal)
 }
 int main()
 {
-
-    std::cout << "A " << getAnimalname(Animal::cat) << " has " << printNumberOfLegs(Animal::cat) << " legs" << std::endl;
-    std::cout << "A " << getAnimalname(Animal::chicken) << " has " << printNumberOfLegs(Animal::chicken) << " legs" << std::endl;
+    using enum Animal;
+    std::cout << "A " << getAnimalname(cat) << " has " << printNumberOfLegs(cat) << " legs" << std::endl;
+    std::cout << "A " << getAnimalname(chicken) << " has " << printNumberOfLegs(chicken) << " legs" << std::endl;
 
     return 0;
 }

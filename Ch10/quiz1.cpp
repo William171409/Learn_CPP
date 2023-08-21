@@ -69,8 +69,11 @@ void printMonster(const Monster& m)
 int main()
 {
     Monster monster{Type_Monster::giant_spider, "prince Edward", 100};
-    Monster* p{&monster}; //pass by ptr
-    Monster& ref{monster}; //pass by ref
-    printMonster(p);
+
+    Monster* p1{&monster}; //pass by ptr
+    Monster& ref1{monster}; //pass by ref
+    
+    printMonster({Type_Monster::orc,"Wiz Halifa",102});
+    printMonster(ref1);
     return 0;
 }
