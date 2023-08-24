@@ -2,6 +2,7 @@
 #include <iostream>
 #include <iterator> // for std::size
 #include <utility>
+#include "bubbleSort.hpp"
 
 namespace improved
 {   
@@ -10,7 +11,7 @@ namespace improved
         {
             for(int i=0;i<size_array-1;i++)
             {
-                int counter{};
+                int counter{0};
                 for(int j=0;j<size_array-1-i;j++)
                 {
                     if(p[j]>p[j+1])

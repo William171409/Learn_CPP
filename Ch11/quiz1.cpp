@@ -27,7 +27,7 @@ int countTotalItems(std::array<int, Maxlength> arr)
 }
 int main()
 {
-    std::array<int, Maxlength> arr{2, 5, 10};
+    std::array<int, Maxlength> arr{1,3,8};
     std::cout << "The player has " << countTotalItems(arr) << " items!\n";
     std::cout << "The player has " << arr[torch] << " torches\n";
 

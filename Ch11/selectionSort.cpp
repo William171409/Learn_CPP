@@ -31,7 +31,7 @@ int main()
     //         }
     //     }
     // }
-    selectionSort(array,static_cast<int>(std::size(array)));
+    improved::selectionSort(array,static_cast<int>(std::size(array)));
     for (int index{0}; index < static_cast<int>(std::size(array)); ++index)
     {
         std::cout << array[index] << ' ';

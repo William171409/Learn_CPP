@@ -14,8 +14,8 @@ int main()
         std::cout << array[index] << ' ';
     }
     std::cout << '\n';
-    // improved::bubbleSort(array, static_cast<int>(std::size(array)));
-    improved::insertionSort(array, static_cast<int>(std::size(array)));
+    improved::bubbleSort(array, static_cast<int>(std::size(array)));
+    // improved::insertionSort(array, static_cast<int>(std::size(array)));
     for (int index{0}; index < static_cast<int>(std::size(array)); ++index)
     {
         std::cout << array[index] << ' ';
