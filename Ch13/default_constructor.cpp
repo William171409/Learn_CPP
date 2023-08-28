@@ -3,8 +3,8 @@
 class Fraction
 {
 private:
-    int m_numerator {};
-    int m_denominator {};
+    int m_numerator{} ;
+    int m_denominator{} ;
 
 public:
     Fraction() // default constructor
@@ -20,7 +20,7 @@ public:
 
 int main()
 {
-    Fraction frac; // calls Fraction() default constructor
+    Fraction frac{}; // calls Fraction() default constructor
     std::cout << frac.getNumerator() << '/' << frac.getDenominator() <<'='<<frac.getValue()<< '\n';
 
     return 0;

@@ -3,7 +3,7 @@
 class Something
 {
 private:
-	const int m_value=0;
+	const int m_value{};
 
 public:
 	Something(int x) : m_value{ x } // directly initialize our const member variable

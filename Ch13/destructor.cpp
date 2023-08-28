@@ -35,7 +35,7 @@ int main()
 	for (int count{ 0 }; count < ar.getLength(); ++count)
 		ar.setValue(count, count+1);
 
-	std::cout << "The value of element 8 is: " << ar.getValue(8) << '\n';
+	std::cout << "The value of element 9 is: " << ar.getValue(9) << '\n';
 
 	return 0;
 } // ar is destroyed here, so the ~IntArray() destructor function is called here
