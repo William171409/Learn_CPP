@@ -234,6 +234,7 @@ bool playerTurn(Deck& deck, Player& player)
         }
         else
         {
+            if(player.score()==g_maximumScore) return false;
             if (playerWantsHit())
             {
                 int cardValue{ player.drawCard(deck) };
@@ -324,3 +325,5 @@ int main()
 
   return 0;
 }
+
+

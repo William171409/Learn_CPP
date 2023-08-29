@@ -31,7 +31,8 @@ private:
 
 public:
     Monster() = default;
-    Monster(MonsterType type, std::string name, std::string roar, int hp) : m_t{type}, m_name{name}, m_roar{roar}, m_hp{hp}
+    Monster(MonsterType type, std::string name, std::string roar, int hp) 
+    : m_t{type}, m_name{name}, m_roar{roar}, m_hp{hp}
     {
     }
     std::string_view getTypeString(MonsterType type) const

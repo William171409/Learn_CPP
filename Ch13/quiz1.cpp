@@ -26,8 +26,8 @@ public:
 };
 double distanceBetween(const Point2d& p1,const Point2d& p2)
 {
-    p1.print();
-    p2.print();
+    // p1.print();
+    // p2.print();
     return std::sqrt(pow(p1.m_x-p2.m_x,2)+pow(p1.m_y-p2.m_y,2));
 }
 int main()
