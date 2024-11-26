@@ -43,6 +43,8 @@ int main()
     Point p3(p1);
     // Copy ctor is called
     std::cout << p3.x << "\n"; // 0
+    // std::cout << p3.y << "\n"; // 0
+
 
     p3 = p2;
     // Copy Assignment ctor is called
